@@ -1,5 +1,5 @@
 angular.module('app')
-.controller('PostCtrl', ['$scope','PostsSvc', function($scope, PostsSvc){
+.controller('PostsCtrl', ['$scope','PostsSvc', function($scope, PostsSvc){
   PostsSvc.fetch()
   .success(function(posts){
     $scope.posts = posts
